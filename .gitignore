@@ -1,33 +1,16 @@
-# Root-level gitignore for the entire repository
+# Ignore files and directories specific to the demo folder from the root
 
-# Ignore files and directories in the demo directory
-/demo/.gradle/
-/demo/build/
-/demo/.idea/
 /demo/*.iml
-
-# Kotlin compiled files
-*.class
-*.jar
-*.war
-*.ear
-
-# Gradle build files
-.gradle/
-build/
-
-# Gradle wrapper files (if used)
-gradle-wrapper.jar
-gradle-wrapper.properties
-
-# OS generated files
-.DS_Store
-Thumbs.db
-
-# Kotlin/Native output (if applicable)
-.demo/.kcache
-.demo/*.klib
-
-# Project-specific Kotlin build cache
-.demo/.kbuild/
-
+/demo/.gradle/
+/demo/local.properties
+/demo/.idea/caches/
+/demo/.idea/libraries/
+/demo/.idea/modules.xml
+/demo/.idea/workspace.xml
+/demo/.idea/navEditor.xml
+/demo/.idea/assetWizardSettings.xml
+/demo/.DS_Store
+/demo/build/
+/demo/captures/
+/demo/.externalNativeBuild/
+/demo/.cxx/
