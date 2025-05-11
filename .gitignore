@@ -1,25 +1,33 @@
-# If you prefer the allow list template instead of the deny list, see community template:
-# https://github.com/github/gitignore/blob/main/community/Golang/Go.AllowList.gitignore
-#
-# Binaries for programs and plugins
-*.exe
-*.exe~
-*.dll
-*.so
-*.dylib
+# Root-level gitignore for the entire repository
 
-# Test binary, built with `go test -c`
-*.test
+# Ignore files and directories in the demo directory
+/demo/.gradle/
+/demo/build/
+/demo/.idea/
+/demo/*.iml
 
-# Output of the go coverage tool, specifically when used with LiteIDE
-*.out
+# Kotlin compiled files
+*.class
+*.jar
+*.war
+*.ear
 
-# Dependency directories (remove the comment below to include it)
-# vendor/
+# Gradle build files
+.gradle/
+build/
 
-# Go workspace file
-go.work
-go.work.sum
+# Gradle wrapper files (if used)
+gradle-wrapper.jar
+gradle-wrapper.properties
 
-# env file
-.env
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Kotlin/Native output (if applicable)
+.demo/.kcache
+.demo/*.klib
+
+# Project-specific Kotlin build cache
+.demo/.kbuild/
+
