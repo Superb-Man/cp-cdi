@@ -1,16 +1,16 @@
-# Ignore files and directories specific to the demo folder from the root
+# Ignore files and directories in any folder starting with 'demo'
 
-/demo/*.iml
-/demo/.gradle/
-/demo/local.properties
-/demo/.idea/caches/
-/demo/.idea/libraries/
-/demo/.idea/modules.xml
-/demo/.idea/workspace.xml
-/demo/.idea/navEditor.xml
-/demo/.idea/assetWizardSettings.xml
-/demo/.DS_Store
-/demo/build/
-/demo/captures/
-/demo/.externalNativeBuild/
-/demo/.cxx/
+/demo*/**/*.iml
+/demo*/.gradle/
+/demo*/local.properties
+/demo*/.idea/caches/
+/demo*/.idea/libraries/
+/demo*/.idea/modules.xml
+/demo*/.idea/workspace.xml
+/demo*/.idea/navEditor.xml
+/demo*/.idea/assetWizardSettings.xml
+/demo*/.DS_Store
+/demo*/build/
+/demo*/captures/
+/demo*/.externalNativeBuild/
+/demo*/.cxx/
