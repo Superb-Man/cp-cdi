@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_go_to_history"
+        android:title="@string/see_history"
+        app:showAsAction="never"
+        android:background="@drawable/rounded_menu_bg"/>
+
+    <item
+        android:id="@+id/go_to_add_record"
+        android:title="@string/add_record"
+        app:showAsAction="never"
+        android:background="@drawable/rounded_menu_bg"/>
+</menu>

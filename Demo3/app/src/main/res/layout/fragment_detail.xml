@@ -1,0 +1,117 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/card_margin"
+        app:cardElevation="@dimen/card_elevation_high"
+        app:cardCornerRadius="@dimen/card_corner_radius_high"
+        app:cardBackgroundColor="#F0F0F0"
+        android:id="@+id/cardView"
+        android:contentDescription="@string/details_card"
+        android:padding="@dimen/padding_large">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_small">
+
+                <TextView
+                    android:id="@+id/detailsTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/health_record_details"
+                    android:text="@string/health_record_details"
+                    android:textSize="@dimen/text_title"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:gravity="center"
+                    android:layout_marginBottom="@dimen/margin_bottom_medium"/>
+
+                <TextView
+                    android:id="@+id/dateText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_medium"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="@dimen/margin_bottom_small"/>
+
+                <TextView
+                    android:id="@+id/timeText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_medium"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="@dimen/margin_bottom_small"/>
+
+                <TextView
+                    android:id="@+id/sleepDurationText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_medium"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="@dimen/margin_bottom_small"/>
+
+                <TextView
+                    android:id="@+id/sugarLevelText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textSize="@dimen/text_medium"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="@dimen/margin_bottom_small"/>
+
+                <TextView
+                    android:id="@+id/activityText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_medium"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="@dimen/margin_bottom_small"/>
+
+                <TextView
+                    android:id="@+id/diseasesText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_medium"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="@dimen/margin_bottom_large"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/editButton"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/edit_your_information"
+                        android:text="@string/edit"
+                        android:textSize="@dimen/text_button"
+                        android:padding="@dimen/button_padding"
+                        android:backgroundTint="@android:color/holo_blue_dark"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+</layout>

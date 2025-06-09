@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph2.xml"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.demo2.Fragment.HomeFragment"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_inputFragment"
+            app:destination="@id/inputFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popEnterAnim="@anim/slide_in_left" />
+        <action
+            android:id="@+id/action_homeFragment_to_healthCardsFragment"
+            app:destination="@id/healthCardsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popEnterAnim="@anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/editInputFragment"
+        android:name="com.example.demo2.Fragment.EditInputFragment"
+
+        tools:layout="@layout/fragment_input">
+        <argument
+            android:name="id"
+            app:argType="integer"/>
+    </fragment>
+    <fragment
+        android:id="@+id/inputFragment"
+        android:name="com.example.demo2.Fragment.InputFragment"
+
+        tools:layout="@layout/fragment_input">
+        <argument
+            android:name="id"
+            app:argType="integer"/>
+    </fragment>
+    <fragment
+        android:id="@+id/healthCardsFragment"
+        android:name="com.example.demo2.Fragment.HealthCardsFragment"
+
+        tools:layout="@layout/fragment_health_cards" >
+        <action
+            android:id="@+id/action_healthCardsFragment_to_detailFragment"
+            app:destination="@id/detailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popEnterAnim="@anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.demo2.Fragment.DetailFragment">
+        <argument
+            android:name="id"
+            app:argType="integer"/>
+        <action
+            android:id="@+id/action_detailFragment_to_editInputFragment"
+            app:destination="@id/editInputFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popEnterAnim="@anim/slide_in_left" />
+    </fragment>
+
+</navigation>

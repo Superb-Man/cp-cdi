@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/padding_medium"
+    tools:context=".Fragment.InputFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_large">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_large"
+            android:gravity="center|center_vertical"
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="@dimen/icon_size_large"
+                android:layout_height="@dimen/icon_size_large"
+                android:layout_marginEnd="@dimen/padding_small"
+                android:src="@drawable/samsung_health_svgrepo_com" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/track_your_health"
+                android:textSize="@dimen/text_large"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="@dimen/padding_medium">
+
+            <ImageView
+                android:id="@+id/datePickerIcon"
+                android:layout_width="@dimen/icon_size_small"
+                android:layout_height="@dimen/icon_size_small"
+                android:src="@android:drawable/ic_menu_today"
+                android:layout_marginEnd="@dimen/padding_small"
+                android:clickable="true"
+                android:focusable="true"/>
+
+            <EditText
+                android:id="@+id/datePicker"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="@string/select_date"
+                android:focusable="false"
+                android:clickable="true"/>
+
+            <ImageView
+                android:id="@+id/timePickerIcon"
+                android:layout_width="@dimen/icon_size_small"
+                android:layout_height="@dimen/icon_size_small"
+                android:src="@android:drawable/ic_menu_today"
+                android:layout_marginStart="@dimen/padding_small"
+                android:clickable="true"
+                android:focusable="true"/>
+
+            <EditText
+                android:id="@+id/timePicker"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="@string/select_time"
+                android:focusable="false"
+                android:clickable="true"/>
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="@dimen/padding_medium">
+
+            <ImageView
+                android:layout_width="@dimen/icon_size_small"
+                android:layout_height="@dimen/icon_size_small"
+                android:src="@drawable/sugar_blood_level_diabetes"
+                android:layout_marginEnd="@dimen/padding_small"/>
+
+            <EditText
+                android:id="@+id/sugarLevel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_your_sugar_level"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="@dimen/padding_large">
+
+            <ImageView
+                android:layout_width="@dimen/icon_size_small"
+                android:layout_height="@dimen/icon_size_small"
+                android:src="@drawable/ic_sleep"
+                android:layout_marginEnd="@dimen/padding_small"/>
+
+            <EditText
+                android:id="@+id/sleepDuration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/sleep_duration_hours"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_activity_level"
+            android:textSize="@dimen/text_medium"
+            android:layout_marginBottom="@dimen/padding_small"/>
+
+        <RadioGroup
+            android:id="@+id/activityLevelGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_small"
+            android:layout_marginBottom="@dimen/padding_large">
+
+            <RadioButton
+                android:id="@+id/radio_low"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/low"/>
+
+            <RadioButton
+                android:id="@+id/radio_moderate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/moderate"/>
+
+            <RadioButton
+                android:id="@+id/radio_high"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/high"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_symptoms"
+            android:textSize="@dimen/text_medium"
+            android:layout_marginBottom="@dimen/padding_small"/>
+
+        <CheckBox
+            android:id="@+id/check_fatigue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fatigue"
+            android:layout_marginBottom="@dimen/padding_xsmall"/>
+
+        <CheckBox
+            android:id="@+id/check_dizziness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dizziness"
+            android:layout_marginBottom="@dimen/padding_xsmall"/>
+
+        <CheckBox
+            android:id="@+id/check_chestPain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/chest_pain"
+            android:layout_marginBottom="@dimen/padding_large"/>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/submit_health_data"
+            android:padding="@dimen/button_padding"
+            android:layout_marginTop="@dimen/button_margin_top"
+            android:layout_marginBottom="@dimen/button_margin_bottom"/>
+    </LinearLayout>
+</ScrollView>
